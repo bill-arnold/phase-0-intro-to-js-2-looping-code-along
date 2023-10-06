@@ -14,8 +14,6 @@ function countDown(number) {
   }
 }
 
-writeCards(["Ada", "Brendan", "Ali"], "birthday");
-
 // Helper function for writeCards
 function writeCards(names, event) {
   const messages = [];
@@ -24,3 +22,9 @@ function writeCards(names, event) {
   }
   return messages;
 }
+
+
+wrapGifts(gifts);
+countDown(5);
+const thankYouMessages = writeCards(["Ada", "Brendan", "Ali"], "birthday");
+console.log(thankYouMessages);
